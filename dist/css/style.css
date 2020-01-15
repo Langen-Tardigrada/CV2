@@ -1,0 +1,349 @@
+body {
+    background-color:#CFD6C9;
+}
+
+table.menu{
+    top: 100px;
+    border: 1px solid #CFD6C9;
+    border-radius: 12px;
+    width: 76.3%;
+    height: 50px;  
+    margin-top: 50px;          
+}
+th.menu{
+    border-radius: 12px;
+    background-color:#31312E;
+    text-align: center;
+    color:#CFD6C9;
+}
+
+a.home:link, a.home:visited{
+    background-color: #31312E;
+    color: #CFD6C9;
+    text-decoration: none;
+    display: inline-table;
+}
+
+a.gallery:link, a.gallery:visited{
+    background-color: #31312E;
+    color: #CFD6C9;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.contact:link, a.contact:visited{
+    background-color: #31312e;
+    color: #CFD6C9;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.home:hover, a.home:active{
+    background-color: #CFD6C9;
+    border: 1px solid #31312E;
+    border-radius: 12px;
+    color: #31312E;
+    padding: 10px 44%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-table;
+}
+
+a.contact:hover, a.contact:active{
+    background-color: #CFD6C9;
+    border: 1px solid #31312E;
+    border-radius: 12px;
+    color: #31312E;
+    padding: 10px 42.25%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-table;
+}
+
+a.gallery:hover, a.gallery:active{
+    background-color: #CFD6C9;
+    border: 1px solid #31312E;
+    border-radius: 12px;
+    color: #31312E;
+    padding: 10px 42.25%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-table;
+}
+
+div.introduct{
+    border-radius: 1px solid #CFD6C9;
+    background-color: #31312E ;
+    border-radius: 12px;
+    color: #CFD6C9;
+    position: relative;
+    text-align: left;
+    padding: 30px;
+    margin:auto;
+    margin-top: 5px;
+    width: 75.8%;
+    height: auto;
+}
+
+div.pictureAbs{
+    position: absolute;
+    right:30px;
+    top:30px;
+    width: 200px;
+    height: 200px;
+}
+
+a.mail{
+    color: #DEB79B;
+    text-decoration: none;
+}
+
+div.info{
+    border-radius: 12px;
+    position: relative;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    width: 75.8%;
+    height: 1683px;
+}
+
+div.profile{
+    background-color: #DEB79B;
+    position: absolute;
+    padding: 30px;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    color: whitesmoke;
+}
+
+#profile{
+    font-family:'Cambria';
+    font-size: medium;
+}
+
+div.skill{
+    border: 1px solid #FEEEC2;
+    border-radius: 12 px;
+    background-color: #FEEEC2;
+    position: absolute;
+    padding: 30px;
+    top: 184px;
+    right: 10px;
+    left: 10px;
+    color: #31312E;
+}
+
+table.skill{
+    margin-left: 200px;
+    border-collapse: collapse;
+    width: 100%;
+}
+ tr.skill{
+     border-bottom: 1px solid #31312E;
+     
+
+ }
+
+ th.skill{
+     text-align: center;
+     padding: 10px;
+ }
+
+ td.skill{
+     text-align: left;
+     padding: 10px;
+ }
+
+ div.technic{
+     background-color: #DEB79B;
+     padding: 30px;
+     position: absolute;
+     top: 698px;
+     right:10px;
+     left: 10px;
+     color: whitesmoke;
+ }
+
+ div.exp{
+     background-color: #FEEEC2;
+     padding: 30px;
+     position: absolute;
+     top: 943px;
+     right:10px;
+     left: 10px;
+     color: #31312E;
+ }
+
+ div.education{
+    background-color: #DEB79B;
+    padding: 30px;
+    position: absolute;
+    top: 1477px;
+    right:10px;
+    left: 10px;
+    color: whitesmoke;
+ }
+
+ div.img{
+    border-radius: 12px;
+    position: relative;
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    height: 1553px;
+}
+
+ table.img{
+    position: absolute;;
+    top: 100px;
+    border-radius: 12px;
+    width: 75.8%;
+    height: 50%;  
+    margin-top: 14%;
+    margin-left: 10%;
+    border: 1px solid #31312E;
+
+ }
+
+ tr.img{
+     align-content: center;
+     padding: auto;
+     text-align: center;
+ }
+
+ td.img{
+    align-content: center;
+    padding: auto;
+    text-align: center;
+    border-bottom: 1px solid #31312E;
+ }
+
+ #img{
+    align-content: center;
+    padding: auto;
+    text-align: center;
+ }
+ 
+ #lineC{
+     border-right:1px solid #31312E;
+ }
+
+ div.form{
+    border: 1px solid #31312E;
+    border-radius: 12px;
+    border-radius: 12px;
+    /*position: relative;*/
+    padding: 30px;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    height: 70%px;
+ }
+
+ *{
+     box-sizing: border-box;
+ }
+
+ input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #31312E;
+    background-color: transparent;
+    resize: vertical;
+ }
+
+ input[type=tel]{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #31312E;
+    background-color: transparent;
+    resize: vertical;
+ }
+
+ input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #31312E;
+    background-color: transparent;
+    resize: vertical;
+ }
+
+ input[type=text]:focus{
+    background-color: #31312E;
+    color: whitesmoke;
+    border:1px #CFD6C9;
+ }
+
+ select:focus{
+    background-color: #31312E;
+    color: whitesmoke;
+    border:1px #CFD6C9;
+ }
+
+ textarea:focus{
+    background-color: #31312E;
+    color: whitesmoke;
+    border:1px #CFD6C9;
+ }
+
+ input[type=tel]:focus{
+    background-color: #31312E;
+    color: whitesmoke;
+    border:1px #CFD6C9;
+ }
+
+ input[type=email]:focus{
+    background-color: #31312E;
+    color: whitesmoke;
+    border:1px #CFD6C9;
+ }
+
+ label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #31312E;
+    color: whitesmoke;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  input[type=submit]:hover {
+    background-color: rgb(36, 36, 32);
+  }
+
+  div.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  div.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+div.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+@media screen and (max-width: 600px) {
+div.col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
