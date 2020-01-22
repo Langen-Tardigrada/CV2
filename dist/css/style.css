@@ -237,9 +237,9 @@ table.skill{
     border-radius: 12px;
     /*position: relative;*/
     padding: 30px;
-    margin: auto;
+    margin:  1%;
     margin-top: 10px;
-    width: 100%;
+    width: 98%;
     height: 70%px;
  }
 
@@ -347,3 +347,25 @@ div.col-25, .col-75, input[type=submit] {
       margin-top: 0;
     }
   }
+
+.new{
+    visibility: hidden;   
+}
+
+.previous{
+    visibility: hidden;
+}
+
+button[type=submit]{
+    background-color: #31312E;
+    color: whitesmoke;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.hidejs{
+    visibility: hidden; 
+}

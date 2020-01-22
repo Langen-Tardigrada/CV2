@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel = "stylesheet" href="dist/css/style.css">
+    <title>Mini Games</title> 
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+
+    <div class="wrapper">
+
+        <header class="main-header" style = "background-color: #31312E;">
+          <!-- Logo -->
+          <a href="/" class="logo" style = "background-color: #31312E;">
+            <!-- mini logo for sidebar mini 50x50 pixels -->
+             <!--<span class="logo-mini"><b>B</b>LT</span> -->   
+            <!-- logo for regular state and mobile devices -->
+            <span class="logo-lg"><b>CPE207</b></span>
+          </a>
+          <!-- Header Navbar: style can be found in header.less -->
+          <nav class="navbar navbar-static-top" style = "background-color:#31312E;">
+            <!-- Sidebar toggle button-->    
+             <!-- Sidebar toggle button-->
+            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a> 
+          </nav>
+        </header>
+      
+        <!-- =============================================== -->
+      
+        <!-- Left side column. contains the sidebar -->
+        <aside class="main-sidebar" style = "background-color: #31312E;">
+          <!-- sidebar: style can be found in sidebar.less -->
+          <section class="sidebar">
+            <!-- Sidebar user panel -->
+            <div class="user-panel">
+              <div class="pull-left image">
+                <img src="dist/img/me.png" class="img-circle" alt="User Image">
+              </div>
+              <div class="pull-left info">
+                <p>Kansiree Lee</p>
+                <!-- <a href="#"><i class="fa fa-circle text-success"></i> Online</a> -->
+              </div>
+            </div>
+            <!-- search form -->
+            
+            <!-- /.search form -->
+            <!-- sidebar menu: : style can be found in sidebar.less -->
+            <ul class="sidebar-menu" >
+                <li class="treeview">
+                    <a href="#">
+                      <i class="fa fa-home"></i> <span>HOME</span>
+                    </a>                
+                  </li>
+                  <li class="treeview">
+                    <a href="gallery.html" target="_top">
+                      <i class="fa fa-picture-o"></i> <span>GALLERY</span>
+                    </a>              
+                  </li>
+                  <li class="treeview">
+                    <a href="contact.html" target="_top">
+                      <i class="fa fa-paper-plane-o"></i> <span>CONTACT</span>
+                    </a>               
+                  </li>
+                  <li class="treeview">
+                    <a href="miniGames.html" target="_top">
+                      <i class="fa fa-gamepad"></i> <span>MINI GAMES</span>
+                    </a>          
+                  </li>
+            </ul>
+          </section>
+          <!-- /.sidebar -->
+        </aside>
+      
+        <!-- =============================================== -->
+      
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper" style="background-color: rgb(220, 228, 213);">
+          <!-- Content Header (Page header) -->
+          <section class="content-header">
+            <h1 style ="padding-top:10px; padding-bottom: 10px;font-family: 'Courier New';">
+              <b>MINI GAMES</b>
+            </h1>
+          </section>
+          <!-- Main content -->
+          <section class="content">
+            <div class ="row">
+                <div class="col-lg-12 col-s-6">
+                <!-- small box -->
+                  <div class="small-box" style="background-color: #31312E;color: lavenderblush;">
+                    <div class="inner">
+                      <h3 style="font-family: 'Courier New'; padding: 10px;">Number Guessing Game</h3>
+                        <p style="font-family: 'Courier New';padding: auto;">&emsp;&emsp;&emsp; We have selected a random number between 1 and 100.See if you can guess it 
+                            in 10 turns or less. We'll tell you if your guess was too high or to low.</p>
+                    </div>
+                  </div>
+            </div>  
+            </div>
+            <div class="row" style="font-family:'Courier New';">
+                <div class = "form" style = "border: 1px solid #31312E ; border-radius: 12px;">
+                    <form name = "guess">
+                        <div class = "row">
+                            <div class = "col-25">
+                                <label for="fname">Enter a guess:</label>
+                            </div>
+                            <div class = "col-75">
+                                <input type ="text" id="number" name="firstname" placeholder = "Input your guessing number">
+                            </div>
+                        </div>
+                        <div class ="row">
+                            <button type="submit" class ="input">Submit guess</button>
+                        </div>
+                        <div class = "hidejs">
+                            <p class = "previous">Previous:<br></p>
+                            <p class = "result" style="color: white"> <br></p>
+                            <p class = "hint"> <br></p>
+                            <button class = "new">Start new game</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+          </section>
+          <!-- /.content -->
+        </div>
+        
+        
+        <!-- /.content-wrapper -->
+        <!-- Add the sidebar's background. This div must be placed
+             immediately after the control sidebar -->
+        <div class="control-sidebar-bg"></div>
+    </div>
+    <!--wrapper-->
+    <!--jQuery 3-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js" 
+    integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <!--bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--slimScroll-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js" 
+    integrity="sha256-qE/6vdSYzQu9lgosKxhFplETvWvqAAlmAuR+yPh/0SI=" crossorigin="anonymous"></script>
+    <!-- FastClick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js" 
+    integrity="sha256-t6SrqvTQmKoGgi5LOl0AUy+lBRtIvEJ+++pLAsfAjWs=" crossorigin="anonymous"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="dist/js/demo.js"></script>
+    <script src="dist/js/calculate.js"></script>
+</body>
+</html>
