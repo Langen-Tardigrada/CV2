@@ -369,3 +369,12 @@ button[type=submit]{
 .hidejs{
     visibility: hidden; 
 }
+button[type=newgames]{
+    background-color: #31312E;
+    color: whitesmoke;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}

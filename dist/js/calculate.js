@@ -16,8 +16,8 @@ document.querySelector('button.input').addEventListener('click', function(e) {
     if(data == n){
         pre.style.visibility = 'visible';
         pre.textContent += " " + `${data}`;
-        ans.innerHTML = "Congratulations! You got it right!";
-        ans.style.backgroundColor = 'green';
+        ans.innerHTML = "&emsp;Congratulations! You got it right!";
+        ans.style.backgroundColor = 'olivedrab';
         hint.innerHTML = "";
         document.querySelector('button.new').style.visibility = 'visible';
         document.querySelector('button.new').addEventListener('click', ()=>{
@@ -28,8 +28,8 @@ document.querySelector('button.input').addEventListener('click', function(e) {
     }else{
         pre.style.visibility = 'visible';
         pre.textContent += " " + `${data}`;
-        ans.innerHTML = "Wrong!";
-        ans.style.backgroundColor = 'red';
+        ans.innerHTML = "&emsp;Wrong!";
+        ans.style.backgroundColor = 'lightcoral';
         if(data>n){
             hint.innerHTML = "Last guess was too high!";
         }else{
