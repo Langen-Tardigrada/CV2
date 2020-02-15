@@ -67,6 +67,7 @@ $('#submit').click(function(event){
         $("input[name='radio']").prop("checked",false);
         document.myform.email.value = '';
         document.myform.messege.value = '';
+       
     }
 
     function validateEmail(email) {
@@ -85,7 +86,7 @@ $('#reset').click(()=> {
     $('#message').val('');
 })
 
-
+var i = 0;
 
 datab.collection('contactPerson').orderBy('fname').onSnapshot(doc =>{
     let table = $('tbody')[0]
@@ -128,7 +129,7 @@ datab.collection('contactPerson').orderBy('fname').onSnapshot(doc =>{
         fifthCell.textContent = item.data().texts
         function checkGender(){
             let str ='';
-            switch(item.data().gender){ //jj
+            switch(item.data().gender){
                 case 1:
                     str = 'Male'
                     male++;
@@ -151,8 +152,8 @@ datab.collection('contactPerson').orderBy('fname').onSnapshot(doc =>{
         let name = item.data().fname+item.data().lname;
         row.id = (hname);
 
-        firstCell.innerHTML = '<button type="button" class = "btn btn-info btn-lg" style = "background-color: transparent; border: 0px; font-size: 14px; color:#31312E;" data-toggle="modal" data-target="#'+item.data().fname+'">' +item.data().fname+ '</button>'+
-                            ' <div class="modal fade" id="'+item.data().fname+'" role="dialog">'+
+        firstCell.innerHTML = '<button type="button" class = "btn btn-info btn-lg" style = "background-color: transparent; border: 0px; font-size: 14px; color:#31312E;" data-toggle="modal" data-target="#'+name+'">' +item.data().fname+ '</button>'+
+                            ' <div class="modal fade" id="'+name+'" role="dialog">'+
                                 '<div class="modal-dialog">'+
                                     '<!-- Modal content-->'+
                                     '<div class="modal-content">'+
@@ -167,7 +168,7 @@ datab.collection('contactPerson').orderBy('fname').onSnapshot(doc =>{
                                             '<p>Detail: '+item.data().texts + ' ' + item.data().lname +'</p>'+
                                         '</div>'+
                                         '<div class="modal-footer">'+
-                                            '<button type="button" name="delete" value="delete" class="btn btn-default" style="background-color:firebrick;color:white;"data-dismiss="modal">Delete</button>'+
+                                            '<button type="delete" name="'+name+'" value="delete" style="background-color:firebrick;color:white;"data-dismiss="modal">Delete</button>'+
                                         '</div>'+
                                     '</div>'+
                                 '</div> '+
@@ -175,19 +176,14 @@ datab.collection('contactPerson').orderBy('fname').onSnapshot(doc =>{
                         
         //console.log(firstCell.textContent + ' ' + secondCell.textContent + ' ' + thirdCell.textContent + ' ' + forthCell.textContent + ' ' + fifthCell.textContent)
         
-        $("button[name='delete']").click(()=>{
-        //    console.log('fuyyyyyyyyyyyy')
-        //    console.log(id);
-            datab.collection('contactPerson').doc(id).delete();
-         //   $('#'+name).remove();
-         //   $('#'+hname).remove();
-            
-            
+        $('button[name = "'+name+'"]').click(() =>{
+                datab.collection('contactPerson').doc(id).delete();
+                 $('#'+hname).remove();
+                 $('#'+name).remove();
+                
         })
 
         
-        
- 
     })
 
     google.charts.load("current", {packages:["corechart"]});
