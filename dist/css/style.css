@@ -231,6 +231,31 @@ table.skill{
      border-right:1px solid #31312E;
  }
 
+
+
+ tr.img{
+    align-content: center;
+    padding: auto;
+    text-align: center;
+}
+
+td.img{
+   align-content: center;
+   padding: auto;
+   text-align: center;
+   border-bottom: 1px solid #31312E;
+}
+
+#img{
+   align-content: center;
+   padding: auto;
+   text-align: center;
+}
+
+#lineC{
+    border-right:1px solid #31312E;
+}
+
  div.form{
     border: 1px solid #31312E;
     border-radius: 12px;
@@ -243,6 +268,64 @@ table.skill{
     height: 70%px;
  }
 
+ div.contact{
+    border: 1px solid #31312E;
+    /* position: relative; */
+    border-radius: 12px;
+    border-radius: 12px;
+    /*position: relative;*/
+    padding: 30px;
+    margin:  1%;
+    margin-top: 10px;
+    width: 98%;
+    height: 70%;
+    min-height: 450px;
+    
+    
+ }
+
+ .chart{
+    border: 1px solid #31312E;
+    /* position: relative; */
+    border-radius: 12px;
+    border-radius: 12px;
+    /*position: relative;*/
+    padding: 30px;
+    margin:  1%;
+    margin-top: 10px;
+    width: 98%;
+    height: 70%;
+    max-height: fit-content;
+   
+ }
+
+ table.contact{
+    /* position: absolute; */
+    top: 100px;
+    border-radius: 12px;
+    width: 50%;
+  /*  height: 50%;  */
+    margin-top: 10px;
+    margin-left: 50%;
+    margin-right: 5%;
+    border-top: 1px solid #31312E;
+    border-bottom: 1px solid #31312E;
+ }
+
+tr.contact{
+    border-bottom: 1px solid #31312E;
+}
+
+th.contact{
+    text-align: center;
+    padding: 10px;
+}
+
+td.contact{
+    text-align: left;
+    padding: 10px;
+}
+
  *{
      box-sizing: border-box;
  }
@@ -254,6 +337,7 @@ table.skill{
     border-bottom: 1px solid #31312E;
     background-color: transparent;
     resize: vertical;
+    
  }
 
  input[type=tel]{
@@ -309,7 +393,70 @@ table.skill{
     display: inline-block;
 }
 
-input[type=submit] {
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-size: auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    background-color: #CFD6C9;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #31312E;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+       top: 4px;
+      left: 4px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #CFD6C9;
+  }
+
+button[type=submit] {
     background-color: #31312E;
     color: whitesmoke;
     padding: 12px 20px;
@@ -317,9 +464,24 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     float: right;
+    
   }
 
-  input[type=submit]:hover {
+  button[type=submit]:hover {
+    background-color: rgb(36, 36, 32);
+  }
+
+  button[type=reset] {
+      background-color: #31312E;
+      color: whitesmoke;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: left;
+  }
+
+  button[type=reset]:hover {
     background-color: rgb(36, 36, 32);
   }
 
@@ -366,6 +528,19 @@ button[type=submit]{
     float: right;
 }
 
+button[type=delete]{
+    background-color: #31312E;
+    color: whitesmoke;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+
+
+
 .hidejs{
     visibility: hidden; 
 }
@@ -378,3 +553,4 @@ button[type=newgames]{
     cursor: pointer;
     float: right;
 }
+

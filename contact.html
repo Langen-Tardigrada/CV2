@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" 
     integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
     <!-- Ionicons -->
-    <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.0/css/ionicons.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -26,6 +26,8 @@
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
     <link rel="stylesheet" href="./dist/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
     <title>CONTACT</title>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -145,11 +147,11 @@
               <!-- ./col ->
               
             </div>-->
-            <div class="row">
+            <!--<div class="row">
                <div class="col-md-12">
-                <!-- Widget: user widget style 1 -->
+                <!-- Widget: user widget style 1 ->
                 <div class="box box-widget widget-user">
-                  <!-- Add the bg color to the header using any of the bg-* classes -->
+                  <!-- Add the bg color to the header using any of the bg-* classes ->
                   <div class="widget-user-header" style = "background-color: #31312E; height: 180px;">
                     <h1 class="widget-user-username" style ="color: lavenderblush;font-family: Cambria;"><b>Kansiree Lee</b></h1>
                     <h4 class="widget-user-desc" style ="color: lavenderblush;font-family: Cambria;">Faculty of Computer Engineering</h4>
@@ -168,39 +170,39 @@
                           <h5 class="description-header">SOPHORMORE</h5>
                           <span class="description-text">second-year</span>
                         </div>
-                        <!-- /.description-block -->
+                        <!-- /.description-block ->
                       </div>
-                      <!-- /.col -->
+                      <!-- /.col ->
                       <div class="col-sm-4 border-right">
                         <div class="description-block">
                           <h5 class="description-header">0</h5>
                           <span class="description-text">FOLLOWERS</span>
                         </div>
-                        <!-- /.description-block -->
+                        <!-- /.description-block ->
                       </div>
-                      <!-- /.col -->
+                      <!-- /.col ->
                       <div class="col-sm-4">
                         <div class="description-block">
                           <h5 class="description-header">20</h5>
                           <span class="description-text">age</span>
                         </div>
-                        <!-- /.description-block -->
+                        <!-- /.description-block ->
                       </div>
-                      <!-- /.col -->
+                      <!-- /.col ->
                     </div>
-                    <!-- /.row -->
+                    <!-- /.row ->
                   </div>
                 </div>
-                <!-- /.widget-user -->
+                <!-- /.widget-user ->
               </div> 
             </div>
             <!-- /.row -->
             <div class = "form" style = "border: 1px solid #31312E ; border-radius: 12px;">
-                <h2>Talk with us</h2>
-                   <form>
+                <h3 style="margin-left: -18px; margin-bottom: 30px; font-size: 30px; margin-top: -10px;"><br>Talk with us</h3>
+                   <form name = "myform">
                       <div class = "row">
                          <div class = "col-25">
-                            <label for="fname">First Name</label>
+                            <labes for="fname" style="font-weight: bold;">First Name</label>
                          </div>
                          <div class = "col-75">
                             <input type ="text" id="fname" name="firstname" placeholder = "Input your name">
@@ -219,53 +221,116 @@
                             <label for="gender">Gender</label>
                          </div>
                          <div class = "col-75">
-                            <select id="gender" name="gender">
-                               <option value ="male">Male</option>
+                            <!--<select id="gender" name="gender">-->
+                               <!-- <option value ="male">Male</option>
                                <option value ="female">Female</option>
-                               <option value ="other">Other</option>
-                            </select>
+                               <option value ="other">Other</option> -->
+                              <label class="container">Male
+                                <input class = "gender" type="radio" id="male" name="radio" value="1">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Female
+                                <input class = "gender" type="radio" id="female" name="radio" value="2">
+                                <span class="checkmark"></span>
+                              </label>
+                              <label class="container">Other
+                                <input  class = "gender" type="radio" id="other" name="radio" value="3">
+                                <span class="checkmark"></span>
+                              </label>
+                            <!--</select>-->
                          </div>
                       </div>
-                      <div class="row">
+                      <!-- <div class="row">
                          <div class="col-25">
                             <label for="number">Phone</label>
                          </div>
                          <div class = "col-75">
-                            <input type="tel" id="number" name="phone" placeholder = "093xxxxxxx" pattern="[0-9]{10}" required >
+                            <input type="tel" id="number" name="phone" placeholder = "093xxxxxxx" pattern="[0-9]{10}"  > <!--requred->
                          </div>
-                      </div>
+                      </div> -->
                       <div class="row">
                          <div class ="col-25">
                             <label for="fname">Email</label>
                          </div>
                          <div class="col-75">
-                            <input type="email" id="fname" name="email"  placeholder="example@hotmail.com">
+                            <input type="email" id="email" name="email"  placeholder="example@hotmail.com">
                          </div>
                       </div>
-                      <div class="row">
+                      <!-- <div class="row">
                          <div class = "col-25">
                             <label for = "subject">Subject</label>
                          </div>
                          <div class = "col-75">
                             <input type="text" id ="subject" name="subjaect" placeholder="Input Subject">
                          </div>
-                      </div>
+                      </div> -->
                       <div class="row">
                          <div class = "col-25">
-                            <label for="messege">Messege</label>
+                            <label for="messege">Detail</label>
                          </div>
                          <div class="col-75">
                             <textarea id ="messege" name="messege" placeholder="Write something." style ="height: 200px;"></textarea>       
                          </div>
                       </div>
                       <div class ="row">
-                         <input type="submit" value="Submit">
+                         <button type="submit" value="Submit" id="submit">Submit</button>
+                         <button type="reset"  value="Reset" id="reset">Reset</button>
                       </div>
+
                    </form>   
-               </div>
-          </div>
+              </div>
+              <div class  = "contact" style="border: 1px solid #31312E; margin-top: 30px; border-radius: 12px;">
+                <h3 style = "margin-left: 5px; margin-bottom: 30px; font-size: 30px; font-weight:550;"> <br>Contact List</h3>
+                <p style = "margin-right: 0px;"> You can press on first name that show inform</p>
+                <div class = "chart" id="donutchart" style="width: 40%; height: 50%; background-color: #CFD6C9; margin-left: 0;" ></div>
+                <div>
+                  <table class = "contact" style="margin-top: -275px; height: auto;" >
+                  <tr class="contact" style = "border-bottom: 1px solid #31312E">
+                    <th class = "contact" width = auto style= "text-align: center; padding: 10px;">Firstname</th>
+                    <th class = "contact" width = auto style= "text-align: center; padding: 10px;">Lastname</th>
+                    <th class = "contact" width = auto style= "text-align: center; padding: 10px;">Gender</th>
+                    <th class = "contact" width = auto style= "text-align: center; padding: 10px;">Email</th>
+                    <th class = "contact" width = auto style= "text-align: center; padding: 10px;">Details</th>
+                  </tr>
+                  <tbody class="contact" style = "border-bottom: 1px solid #31312E; text-align: center;">
+
+                  </tbody>
+                  <!-- <tr class="contact" style = "border-bottom: 1px solid #31312E"> -->
+                    <!-- <td class="contact" style= "text-align: left; padding: 10px;">
+                    </td>
+                    <td class="contact" style= "text-align: left; padding: 10px;">
+                    </td>
+                    <td class="contact" style= "text-align: left; padding: 10px;">
+                    </td>
+                    <td class="contact" style= "text-align: left; padding: 10px;">
+                    </td>
+                    <td class="contact" style="text-align: center; padding: 10px;"><!--<i><b>Chinese</b></i>>-></td> -->
+                  <!-- </tr> -->
+                </table>
+                </div>
+              </div>
+            </div>
           </section>
           <!-- /.content -->
+          <!-- <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Contact List</h4>
+                </div>
+                <div class="modal-body">
+                  <p></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Delete</button>
+                </div>
+              </div>
+              
+            </div> 
+          </div>-->
         </div>
         
         
@@ -291,5 +356,18 @@
     <script src="dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <!-- modals boostrab
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  -->
+
+    <script src="dist/js/contact.js"></script>
 </body>
 </html>
